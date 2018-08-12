@@ -3,12 +3,14 @@ import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
 import { CoursesComponent } from './courses/courses.component';
-import {CoursesService} from './courses.service'
+import {CoursesService} from './courses.service';
+import { FavouriteComponent } from './favourite/favourite.component'
 
 @NgModule({
   declarations: [
     AppComponent,
-    CoursesComponent
+    CoursesComponent,
+    FavouriteComponent
   ],
   imports: [
     BrowserModule
