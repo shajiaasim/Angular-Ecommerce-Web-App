@@ -9,17 +9,13 @@ import { AuthorsService } from "src/app/authors.service";
 })
 export class CoursesComponent implements OnInit {
   title = "list Of Courses";
-  isFavourite = false;
+
   courses;
   authors;
   //Dependency Injection of Service Class
   constructor(courseService: CoursesService, authorsService: AuthorsService) {
     this.courses = courseService.getCourses();
     this.authors = authorsService.getAuthors();
-  }
-
-  click() {
-    this.isFavourite = !this.isFavourite;
   }
 
   ngOnInit() {}

@@ -1,0 +1,6 @@
+<div class="form-group">
+  <!-- two way binding-->
+  <input [(ngModel)]="text" (keypress)="fix()" class="form-control">
+  <!-- One way binding from C=>V-->
+  <p>{{fixedText}}</p>
+</div>
