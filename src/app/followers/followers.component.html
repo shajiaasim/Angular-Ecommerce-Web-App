@@ -1,0 +1,9 @@
+
+  <h1>My followers</h1>
+  <div *ngFor="let post of posts">
+   <img src={{post.avatar_url}} />
+      <div class="text"><span>{{post.login}}</span><br>
+      <a href="{{post.html_url}}">{{post.html_url}}</a>
+      </div>
+  </div>
+

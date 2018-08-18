@@ -1,0 +1,20 @@
+img{
+    width: 80px;
+
+height: 80px;
+
+border-radius: 100%;
+}
+
+div{
+    padding:10px;
+}
+
+.text{
+    display:inline-block;
+}
+
+span{
+    font-size: 15px;
+    font-weight: 1000;
+}
