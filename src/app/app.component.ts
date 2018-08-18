@@ -6,5 +6,20 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'e-commerce-bwah';
+  
+  post={
+    title : 'e-commerce',
+    //initializng state of component
+    isFavourite: false
+  }
+
+  tweet = {
+    body: 'Angular is the best',
+    isLiked : false,
+    likesCount :10
+  }
+
+  clicked(isFav){
+    console.log("clicked: " + isFav);
+  }
 }

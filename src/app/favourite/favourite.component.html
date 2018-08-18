@@ -1,5 +1,6 @@
 <p>
   favourite works!
-  <span (click)="click()" class="glyphicon glyphicon-star" [class.glyphicon-star-empty]="isFavourite" aria-hidden="true"></span>
+  <span (click)="click()" class="glyphicon" [class.glyphicon-star]="isFavourite" 
+   [class.glyphicon-star-empty]="!isFavourite" aria-hidden="true"></span>
 
 </p>

@@ -7,13 +7,19 @@ import { CoursesService } from "./courses.service";
 import { FormsModule } from "@angular/forms";
 import { FavouriteComponent } from "./favourite/favourite.component";
 import { TextBoxComponent } from "./text-box/text-box.component";
+import { TextCasePipe } from './text-case.pipe';
+import { LikeComponent } from './like/like.component';
+import { ZippyComponent } from './zippy/zippy.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CoursesComponent,
     FavouriteComponent,
-    TextBoxComponent
+    TextBoxComponent,
+    TextCasePipe,
+    LikeComponent,
+    ZippyComponent
   ],
   imports: [BrowserModule, FormsModule],
   providers: [CoursesService],

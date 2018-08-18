@@ -1,14 +1,30 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
+<div style="padding:10px">
+  <!-- <h1>
     Welcome to {{ title }}!
 
-  </h1>
+  </h1> -->
 
-  <app-courses>Hola</app-courses>
+  <!-- <app-courses>Hola</app-courses> -->
 
-  <app-favourite></app-favourite>
+  <!-- property binding to a component
+  Passing input properties to components 
+and retreiving output values via events-->
 
-  <app-text-box></app-text-box>
+  <app-favourite [isFavourite]="post.isFavourite" (change)="clicked($event)"></app-favourite>
+
+  <like [tweet]="tweet"></like>
+
+  <!-- <zippy title="Shipping"> Shiping</zippy> -->
+
+  <zippy> 
+    <!-- other way of inserting data into components
+    Assume data is coming from outside and dynamically 
+    creating components out of it -->
+    <div class="heading">Shipping</div>
+     <div class="body"> Shipping details</div> 
+  </zippy>
+
+  <!-- <app-text-box></app-text-box> -->
 
 </div>

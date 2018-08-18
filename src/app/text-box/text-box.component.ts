@@ -6,8 +6,8 @@ import { Component, OnInit } from "@angular/core";
   styleUrls: ["./text-box.component.css"]
 })
 export class TextBoxComponent implements OnInit {
-  text = "";
-  fixedText = "";
+  text: string;
+  fixedText : string;
 
   fix() {
     this.fixedText = this.text;

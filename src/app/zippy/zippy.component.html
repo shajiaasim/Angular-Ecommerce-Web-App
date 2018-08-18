@@ -1,0 +1,12 @@
+
+<div class="zippy-parent">
+<div class="zippy-head" [class.expanded]="isClicked">
+         <ng-content select=".heading"></ng-content> 
+        <span (click)="toggle()" class="glyphicon" [class.glyphicon-chevron-right]="!isClicked" [class.glyphicon-chevron-down]="isClicked"></span>
+</div>
+<div [hidden]="!isClicked"  class="zippy-body">
+        <ng-content select=".body"></ng-content> 
+</div>
+</div>
+
+
